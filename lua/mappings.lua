@@ -12,5 +12,11 @@ map("i", "JK", "<ESC>")
 map("n", "<Del>", "x", { desc = "Delete character under cursor in normal mode" })
 map("i", "<Del>", "<C-o>x", { desc = "Delete character under cursor in insert mode" })
 map("c", "<Del>", "<C-o>x", { desc = "Delete character under cursor in command mode" })
+map(
+  "n",
+  "<leader>hh",
+  "<cmd>lua vim.lsp.buf.hover()<CR>",
+  { noremap = true, silent = true, desc = "Show LSP hover info" }
+)
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
