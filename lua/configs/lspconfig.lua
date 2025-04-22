@@ -45,6 +45,11 @@ for _, lsp in ipairs(servers) do
             },
           },
         }
+      or (lsp == "clangd") and {
+        cmd = { "clangd", "--background-index" },
+        filetypes = { "c", "cpp", "objc", "objcpp" },
+        root_dir = lspconfig.util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
+      }
       or nil, -- Solo aplica settings si es ts_ls
   }
 end
