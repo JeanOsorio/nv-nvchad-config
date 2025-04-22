@@ -96,6 +96,7 @@ return {
     -- },
     opts = {
       provider = "copilot",
+      model = "gpt-4o",
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     build = "make",
