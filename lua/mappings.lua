@@ -20,3 +20,8 @@ map(
 )
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+-- increase or decrease buffer size
+map("n", "<S-Up>", ":resize +2<CR>", { desc = "Increase buffer height" })
+map("n", "<S-Down>", ":resize -2<CR>", { desc = "Decrease buffer height" })
+map("n", "<S-Left>", ":vertical resize -2<CR>", { desc = "Decrease buffer width" })
+map("n", "<S-Right>", ":vertical resize +2<CR>", { desc = "Increase buffer width" })
