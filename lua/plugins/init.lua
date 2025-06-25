@@ -52,7 +52,7 @@ return {
 
   {
     "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
+    branch = "main",
     lazy = false,
     dependencies = {
       { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
