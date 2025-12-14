@@ -14,7 +14,7 @@ map("i", "<Del>", "<C-o>x", { desc = "Delete character under cursor in insert mo
 map("c", "<Del>", "<C-o>x", { desc = "Delete character under cursor in command mode" })
 map(
   "n",
-  "<leader>hh",
+  "<leader>ho",
   "<cmd>lua vim.lsp.buf.hover()<CR>",
   { noremap = true, silent = true, desc = "Show LSP hover info" }
 )
