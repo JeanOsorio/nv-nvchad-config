@@ -11,6 +11,7 @@ local options = {
     jsonc = { "prettierd", "prettier" },
     solidity = { "prettierd", "prettier" },
     markdown = { "deno_fmt" },
+    go = { "goimports", "gofmt" },
   },
 
   format_on_save = {
@@ -21,4 +22,3 @@ local options = {
 }
 
 return options
-
